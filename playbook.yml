@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: CREATE DOCKER IMAGE
+      command: docker build -t register-app:latest  .
+      args:
+        chdir: /opt/Docker
+
+    - name: ADDING TAG TO IMAGE
+      command: docker tag register-app nandhanab/register-app
+
+    - name: PUSH IMAGE TO DOCKER HUB
+      command: docker push nandhanab/register-app
+...
