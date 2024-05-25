@@ -34,7 +34,7 @@
                                 </goals>
                        </execution>
                         <execution>
-                                 <id>reort</id>
+                                 <id>report</id>
                                  <phase>prepare-package</phase>
                                 <goals>
                                          <goal>report</goal>
