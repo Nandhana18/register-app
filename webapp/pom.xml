@@ -29,6 +29,11 @@
           <version>4.0.0-M14</version>
         </plugin>
                  <plugin>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+      <version>0.8.13-SNAPSHOT</version>
+    </plugin>
+                 <plugin>
      <groupId>org.jacoco</groupId>
    <artifactId>jacoco-maven-plugin</artifactId>
 <version>0.8.6</version>
