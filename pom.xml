@@ -52,6 +52,7 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
+
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
@@ -175,11 +176,7 @@
         <artifactId>servlet-api</artifactId>
         <version>2.5</version>
       </dependency>
-<dependency>
-    <groupId>org.sonarsource.scanner.maven</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.11.0.3922</version>
-</dependency>
+
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>jsp-api</artifactId>
@@ -228,3 +225,4 @@
   </prerequisites>
 
 </project>
+
