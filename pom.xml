@@ -104,6 +104,8 @@
            </executions>
              
     </plugin>
+
+                   
             <plugin>
               <artifactId>maven-jxr-plugin</artifactId>
             </plugin>
