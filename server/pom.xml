@@ -31,7 +31,13 @@
       <artifactId>hamcrest-core</artifactId>
       <scope>test</scope>
     </dependency>
+         <dependency>
+   <groupId>org.codehaus.sonar.plugins</groupId>
+   <artifactId>sonar-jacoco-plugin</artifactId>
+   <version>3.2.1</version>
+</dependency>  
 <dependency>
+         
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-site-plugin</artifactId>
   <version>4.0.0-M14</version>
