@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1> <<marquee direction ="right" bgcolor='red'>ONLINE REGISTRATION FOR NEW USERS </font></h1> </marquee>
+    <h1> <marquee direction ="right" bgcolor='red'>ONLINE REGISTRATION FOR NEW USERS </font></h1> </marquee>
     <p> <u> Welcome to our registration page. Please fill the form to create an account. </u></p>
     <hr>
      
