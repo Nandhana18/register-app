@@ -1,14 +1,12 @@
 ---
 - hosts: all
+  become: true
+
   tasks:
-    - name: CREATE DOCKER IMAGE
-      command: docker build -t register-app:latest  .
-      args:
-        chdir: /opt/Docker
+    - name : DELETE OLD DEPLOYMENT
+      command: kubectl delete -f  /opt/deloyment.yml
 
-    - name: ADDING TAG TO IMAGE
-      command: docker tag register-app nandhanab/register-app
+    - name: CREATE A DEPLOYMENT
+      command: kubectl apply -f /opt/deployment.yml
 
-    - name: PUSH IMAGE TO DOCKER HUB
-      command: docker push nandhanab/register-app
 ...
