@@ -9,7 +9,7 @@
     <br>
     
     <label for="mobile"><b> <font color= "green"> Enter your mobile: </font></b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
+    <input type="text" placeholder="Enter mobile number" name="mobile" id="mobile" required>
     <br>
 
     <label for="email"><b> <font color= "green"> Enter your Email ID : </font></b></label>
@@ -22,7 +22,6 @@
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
     <br>
     <p>Click to agree to our <a href="#">Terms & Privacy</a>.</p>
     <button type="submit" class="registerbtn">Register</button>
@@ -31,8 +30,8 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <marquee direction ="right" bgcolor="red"><h1> Thank You !!! Have a nice day </h1> </marquee>
+   <marquee direction ="right" bgcolor="red"><h1> <font color="blue">Thank You !!! Have a nice day </h1> </marquee>
    <br>
-   <h1> Happy Learning. See You Again. </h1>
+   <h1><font color="yellow">Happy Learning. See You Again. </h1>
    
 </form>
