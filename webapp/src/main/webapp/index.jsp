@@ -4,19 +4,19 @@
     <p> <u> Welcome to our registration page. Please fill the form to create an account. </u></p>
     <hr>
      
-    <label for="Name"><b><font color='green'>Enter your Name: </font></b></label>
+    <label for="Name"><b><font color='green'> Enter your Name: </font></b></label>
     <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
     <br>
     
-    <label for="mobile"><b> <font color= "yellow"> Enter your mobile: </font></b></label>
+    <label for="mobile"><b> <font color= "green"> Enter your mobile: </font></b></label>
     <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
     <br>
 
-    <label for="email"><b> <font color= "blue >Enter your Email ID : </font></b></label>
+    <label for="email"><b> <font color= "green"> Enter your Email ID : </font></b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
     <br>
 
-    <label for="psw"><b> password :</b></label>
+    <label for="psw"><b><font color="green"> Enter your Password :</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
     <br>
 
@@ -31,7 +31,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <marquee direction ="right" bgcolor="yellow"><h1> Thank You !!! Have a nice day </h1> </marquee>
+   <marquee direction ="right" bgcolor="red"><h1> Thank You !!! Have a nice day </h1> </marquee>
    <br>
    <h1> Happy Learning. See You Again. </h1>
    
