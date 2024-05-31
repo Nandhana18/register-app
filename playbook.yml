@@ -2,6 +2,14 @@
 - hosts: all
   become: true
   tasks:
-    - name: CREATE A DEPLOYMENT
-      command: kubectl apply -f deployment.yml
+   - name: COPY DEPLOYMENT FILE TO KUBERNETES CLUSTER
+     copy:
+     src: deployment.yml
+     dest: /root/
+     
+   - name: DELETE PREVIOUS KUBERNETES OBJECTS
+     command: kubectl delete -f /root/deployment.yml
+
+   - name: CREATE A DEPLOYMENT
+     command: kubectl apply -f /root/deployment.yml
 ...
