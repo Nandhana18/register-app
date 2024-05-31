@@ -1,24 +1,7 @@
 ---
-- name: Deploying Application to Kubernetes
-  hosts: minikube
-  gather_facts: true
-  vars:
-    kubeconfig_file: ~/.kube/config
-    namespace_name: registerappns
+- hosts: all
+  become: true
   tasks:
-    - name: Create a k8s namespace
-      kubernetes.core.k8s:
-        kubeconfig: "{{ kubeconfig_file }}"
-        name: "{{ namespace_name }}"
-        api_version: v1
-        kind: Namespace
-        state: present
-
-    - name: Create Deployment
-      kubernetes.core.k8s:
-        kubeconfig: "{{ kubeconfig_file }}"
-        state: present
-        src: /root/deployment.yml
-        namespace: "{{ namespace_name }}"
+    - name: CREATE A DEPLOYMENT
+      command: kubectl apply -f deployment.yml
 ...
-
