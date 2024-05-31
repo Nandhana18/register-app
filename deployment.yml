@@ -28,11 +28,11 @@ kind: Service
 metadata:
  name: registerappsvc
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
    app: registerapp
   ports:
    - port: 80
      targetPort: 8080
-     nodePort: 32700
+
 ...
