@@ -4,8 +4,8 @@
   tasks:
    - name: COPY DEPLOYMENT FILE TO KUBERNETES CLUSTER
      copy:
-     src: deployment.yml
-     dest: /root/
+      src: deployment.yml
+      dest: /root/
      
    - name: DELETE PREVIOUS KUBERNETES OBJECTS
      command: kubectl delete -f /root/deployment.yml
