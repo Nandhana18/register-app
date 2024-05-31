@@ -8,7 +8,7 @@
       dest: /root/
      
    - name: DELETE PREVIOUS KUBERNETES OBJECTS
-     command: kubectl delete -f /root/deployment.yml
+     command: kubectl delete deployment registerappdeployment
 
    - name: CREATE A DEPLOYMENT
      command: kubectl apply -f /root/deployment.yml
