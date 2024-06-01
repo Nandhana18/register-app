@@ -28,7 +28,7 @@ kind: Service
 metadata:
  name: registerappsvc
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
    app: registerapp
   ports:
