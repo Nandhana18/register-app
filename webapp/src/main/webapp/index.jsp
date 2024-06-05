@@ -32,6 +32,6 @@
 
    <marquee direction ="right" bgcolor="red"><h1> <font color="blue">Thank You !!! Have a nice day </h1> </marquee>
    <br>
-   <h1><font color="yellow">Happy Learning. See You Again. </h1>
+   <h1><font color="red">Happy Learning. See You Again. </h1>
    
 </form>
