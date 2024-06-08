@@ -20,7 +20,7 @@
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
     <br>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <label for="psw-repeat"><b><font color="green">Repeat Password </font></b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <br>
     <p>Click to agree to our <a href="#">Terms & Privacy</a>.</p>
@@ -30,7 +30,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <marquee direction ="right" bgcolor="red"><h1> <font color="black"> Thank You For Registering with us !!! Have a nice day  </font></h1> </marquee>
+   <marquee direction ="left" bgcolor="red"><h1> <font color="black"> Thank You For Registering with us !!! Have a nice day  </font></h1> </marquee>
    <br>
    <h1><font color="red"> Happy Learning. See You Again.</font> </h1>
    
