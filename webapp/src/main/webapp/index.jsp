@@ -16,7 +16,7 @@
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
     <br>
 
-    <label for="psw"><b><font color="green"> Enter your Password :</b></label>
+    <label for="psw"><b><font color="green"> Enter your Password : </font></b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
     <br>
 
@@ -30,7 +30,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <marquee direction ="right" bgcolor="red"><h1> <font color="black"> Thank You !!! Have a nice day </font></h1> </marquee>
+   <marquee direction ="right" bgcolor="red"><h1> <font color="black"> Thank You For Registering with us !!! Have a nice day  </font></h1> </marquee>
    <br>
    <h1><font color="red"> Happy Learning. See You Again.</font> </h1>
    
