@@ -9,6 +9,7 @@ pipeline{
         stage("MAVEN BUILD"){
             steps{
                 sh "mvn clean package"
+                sh "mvn clean verify site"
             }
         }
         stage("CODE REVIEW"){
@@ -20,7 +21,7 @@ pipeline{
         }
         stage("UNIT TEST AND CODE COVERAGE"){
             steps{
-                sh "mvn clean verify site"
+    
             recordCoverage(tools: [[pattern: 'target/site/jacoco/*.html'], [parser: 'JUNIT', pattern: 'target/surefire-reports/**/*.xml']])
         }
         }
