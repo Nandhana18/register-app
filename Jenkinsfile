@@ -9,7 +9,6 @@ pipeline{
         stage("MAVEN BUILD"){
             steps{
                 sh "mvn clean package"
-    
             }
         }
         stage("CODE REVIEW"){
@@ -21,13 +20,13 @@ pipeline{
         }
         stage("UNIT TEST AND CODE COVERAGE"){
             steps{
-    
-            recordCoverage(tools: [[pattern: 'server/target/site/jacoco/*.html'], [parser: 'JUNIT', pattern: 'server/target/surefire-reports/**/*.xml']])
+            recordCoverage(tools: [[parser: 'JUNIT', pattern: 'server/target/surefire-reports/**/*.xml']])
+            jacoco()
         }
         }
         stage("UPLOAD ARTIFACT"){
             steps{
-            nexusArtifactUploader artifacts: [[artifactId: 'webapp', classifier: '', file: 'webapp/target/webapp.war', type: 'war']], credentialsId: 'nexus-credentials1', groupId: 'com.example.maven-project', nexusUrl: '13.200.252.40:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'capstone-project-snapshot-repo', version: '1.0-SNAPSHOT'
+            nexusArtifactUploader artifacts: [[artifactId: 'webapp', classifier: '', file: 'webapp/target/webapp.war', type: 'war']], credentialsId: 'nexus-credentials1', groupId: 'com.example.maven-project', nexusUrl: '15.207.84.156:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'capstone-project-snapshot-repo', version: '1.0-SNAPSHOT'
         }
         }
         stage("BUILD A DOCKER IMAGE"){
@@ -43,7 +42,7 @@ pipeline{
                 }
             }
         }
-         stage("EXECUTE ANSIBLE PLAYBOOK FOR KUBERNETES DEPLOYMENT"){
+        stage("EXECUTE ANSIBLE PLAYBOOK FOR KUBERNETES DEPLOYMENT"){
            steps{
            ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'playbook.yml'
            }
