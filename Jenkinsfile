@@ -43,5 +43,10 @@ pipeline{
                 }
             }
         }
+         stage("EXECUTE ANSIBLE PLAYBOOK FOR KUBERNETES DEPLOYMENT"){
+           steps{
+           ansiblePlaybook disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'playbook.yml'
+           }
+       }
     }
 }
